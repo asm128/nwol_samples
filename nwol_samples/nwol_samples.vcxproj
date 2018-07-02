@@ -22,7 +22,7 @@
     <ProjectGuid>{BCB7C89D-1FDB-47E5-997A-055F69B5D9AC}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>nwol_samples</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -102,7 +102,6 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <AdditionalIncludeDirectories>..\..\nwol\nwol; ..\..\nwol\gods; ..\..\nwol\gddm; </AdditionalIncludeDirectories>
       <EnablePREfast>false</EnablePREfast>
-      <AdditionalOptions>/permissive-</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -122,7 +121,6 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <AdditionalIncludeDirectories>..\..\nwol\nwol; ..\..\nwol\gods; ..\..\nwol\gddm; </AdditionalIncludeDirectories>
       <EnablePREfast>false</EnablePREfast>
-      <AdditionalOptions>/permissive-</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -144,7 +142,6 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <AdditionalIncludeDirectories>..\..\nwol\nwol; ..\..\nwol\gods; ..\..\nwol\gddm; </AdditionalIncludeDirectories>
       <EnablePREfast>false</EnablePREfast>
-      <AdditionalOptions>/permissive-</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -168,7 +165,6 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <AdditionalIncludeDirectories>..\..\nwol\nwol; ..\..\nwol\gods; ..\..\nwol\gddm; </AdditionalIncludeDirectories>
       <EnablePREfast>false</EnablePREfast>
-      <AdditionalOptions>/permissive-</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
