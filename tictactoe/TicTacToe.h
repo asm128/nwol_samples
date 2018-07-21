@@ -60,10 +60,9 @@ namespace ttt
 			static constexpr	const uint16_t									maskVertical					= 0x49;	// bits representing a column	(001001001)
 			static constexpr	const uint16_t									cellMaskRows	[3]				= {(maskHorizontal	<< (0 * 3)), (maskHorizontal	<< (1 * 3)), (maskHorizontal	<< (2 * 3)),};		
 			static constexpr	const uint16_t									cellMaskColumns	[3]				= {(maskVertical	<< (0 * 1)), (maskVertical		<< (1 * 1)), (maskVertical		<< (2 * 1)),};		
-								uint16_t										check;
 			for(int32_t rowOrCol = 0; rowOrCol < 3; ++rowOrCol) {
-				if(((check = cellMaskRows		[rowOrCol]) & Cells) == cellMaskRows	[rowOrCol]) return true;
-				if(((check = cellMaskColumns	[rowOrCol]) & Cells) == cellMaskColumns	[rowOrCol]) return true;
+				if(((cellMaskRows		[rowOrCol]) & Cells) == cellMaskRows	[rowOrCol]) return true;
+				if(((cellMaskColumns	[rowOrCol]) & Cells) == cellMaskColumns	[rowOrCol]) return true;
 			}	// 
 			static constexpr	const uint16_t									diagonalMask1					= 0x111;
 			static constexpr	const uint16_t									diagonalMask2					= 0x54;

@@ -27,7 +27,7 @@ DEFINE_RUNTIME_INTERFACE_FUNCTIONS(SApplication, "No Workflow Overhead Network S
 	nwol_necall(::nwol::asciiTargetCreate(instanceApp.ASCIITarget, guiSystem.TargetSizeASCII), "Out of memory?");
 
 	static const ::nwol::glabel										newControlLabel					= "Exit";
-	::nwol::SGUIControl												newControl;
+	::nwol::SGUIControl												newControl						= {};
 	
 	newControl.AreaASCII										= {1, 1, (int32_t)newControlLabel.size(), 1}	;
 	newControl.Text												= newControlLabel								;
