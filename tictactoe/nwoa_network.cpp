@@ -21,7 +21,7 @@ int											runCommunications						(::gddm::SFrameworkNetworkClient& appNetwor
 		uint64_t										current_time;
 		break_error_if(errored(result = ::gdnet::time(instanceClient.Endpoints, current_time)), "Failed to get server time.");	// get server time
 		{	// here we update the game instance with the data received from the server.
-			::nwol::CMutexGuard									thelock									(appNetwork.ServerTimeMutex);
+			::nwol::CMutexGuard								thelock									(appNetwork.ServerTimeMutex);
 			appNetwork.ServerTime						= current_time;
 		}
 		info_printf("%s", "Client instance updated successfully.");
