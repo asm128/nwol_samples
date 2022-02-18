@@ -49,7 +49,8 @@ void										runCommunications						(void* pInstanceApp)								{
 	::SApplication									& instanceApp							= *(::SApplication*)pInstanceApp;
 	::gddm::SFrameworkNetworkClient					& instanceAppNetwork					= instanceApp.NetworkClient;
 
-	const ::nwol::error_t							errMyComm								= ::runCommunications(instanceAppNetwork);
+	[[maybe_unused]] const ::nwol::error_t							errMyComm								= ::runCommunications(instanceAppNetwork); 
+	(void)errMyComm;
 
 	gbit_clear(instanceAppNetwork.State, ::gddm::NETWORK_STATE_RUNNING);			
 	info_printf("Communications loop exited with code 0x%X.", errMyComm);
